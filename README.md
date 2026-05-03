@@ -1,16 +1,65 @@
-# React + Vite
+# 🏫 CampusConnect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full stack multi-college event discovery and registration platform built using **React + Firebase**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
+🔗 https://campusconnect.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 About
+CampusConnect helps students discover events happening across different colleges in one place.  
+Colleges can post events, and students can easily register and track their participation.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### 👨‍🎓 Students
+- Google Authentication
+- Browse & search events
+- Register (individual/team)
+- Track registration status
+- Bookmark events
+
+### 🏫 Admin
+- Create & manage events
+- View registrations
+- Approve / reject participants
+
+### 👑 Super Admin
+- Manage colleges
+- Create admin accounts
+- Monitor platform activity
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|------|-----------|
+| Frontend | React + Vite |
+| Styling | Tailwind CSS |
+| Backend | Firebase |
+| Database | Firestore |
+| Hosting | Vercel |
+
+---
+
+## 🔐 Authentication & Security
+- Firebase Authentication (Google + Email)
+- Role-based access control
+- Protected routes
+- Secure environment variables
+
+---
+
+## ⚙️ Setup & Installation
+
+```bash
+git clone https://github.com/YourUsername/campusconnect.git
+cd campusconnect
+npm install
+npm run dev
