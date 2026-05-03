@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #F8FAFC; color: #0F172A; }
+
+@layer components {
+  .btn-primary { @apply bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors cursor-pointer border-none; }
+  .btn-outline { @apply bg-white text-gray-700 px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer; }
+  .btn-danger  { @apply bg-red-50 text-red-600 px-3 py-1.5 rounded-md text-xs font-medium border border-red-200 hover:bg-red-100 transition-colors cursor-pointer; }
+  .btn-success { @apply bg-green-50 text-green-700 px-3 py-1.5 rounded-md text-xs font-medium border border-green-200 hover:bg-green-100 transition-colors cursor-pointer; }
+  .input-field { @apply w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-gray-800 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-50 transition-all bg-white; }
+  .card { @apply bg-white border border-gray-100 rounded-xl; }
+  .badge-hack { @apply bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .badge-quiz { @apply bg-green-50 text-green-700 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .badge-idea { @apply bg-orange-50 text-orange-700 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .badge-comp { @apply bg-purple-50 text-purple-700 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .badge-other { @apply bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .status-pending  { @apply bg-orange-50 text-orange-700 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .status-approved { @apply bg-green-50 text-green-700 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .status-rejected { @apply bg-red-50 text-red-600 text-xs px-2 py-0.5 rounded-full font-medium; }
+  .nav-item { @apply flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-gray-500 cursor-pointer hover:bg-gray-50 transition-colors; }
+  .nav-item-active { @apply flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-blue-600 font-medium bg-blue-50 cursor-pointer; }
+  .section-title { @apply text-sm font-medium text-gray-800; }
+  .lbl { @apply text-xs font-medium text-gray-500 mb-1.5 block; }
+}
